@@ -3,6 +3,7 @@ package com.example.whattoeat2.view
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -14,6 +15,7 @@ class HorizontalRecyclerView(data: MutableList<DataInject>) : RecyclerView.Adapt
     class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
         val tvTitle:TextView = itemView.tv_title
+        val imgIcon:ImageView = itemView.ic_img
         val cardView:CardView = itemView.cardView
     }
 
@@ -31,11 +33,12 @@ class HorizontalRecyclerView(data: MutableList<DataInject>) : RecyclerView.Adapt
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.tvTitle.text = data[position].title
+        holder.imgIcon.setImageResource(data[position].img)
         items.add(holder.cardView)
 
     }
 
     override fun getItemCount(): Int {
-       return 10
+       return data.size
     }
 }

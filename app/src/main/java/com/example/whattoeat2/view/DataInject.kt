@@ -1,5 +1,8 @@
 package com.example.whattoeat2.view
 
-  class DataInject(s: String) {
+import android.media.Image
+
+class DataInject(s: String, img: Int) {
      var title:String = s
+      var img:Int = img
 }
