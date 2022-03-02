@@ -1,7 +1,7 @@
-weather and food
+# Weather and Food
 An application developed in the Java language that helps the user choose what to eat according to the weather by knowing the temperature of the user from his place of residence
 
-Some ScreenShot
+# ScreenShot
 
 
 ![82722b28-239f-492b-9018-ce2945fc1bce](https://user-images.githubusercontent.com/68753686/150504655-12b67f30-0fc7-4c04-a984-7d9d4f4c5e58.jpg)
